@@ -25,6 +25,7 @@ XData ProductionDefinition
   <Item Name="FS.NonAdapter" Category="" ClassName="FS.NonAdapter" PoolSize="0" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
   </Item>
   <Item Name="EnsLib.JavaGateway.Service" Category="" ClassName="EnsLib.JavaGateway.Service" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+    <Setting Target="Host" Name="%gatewayName">%JDBC Server</Setting>
   </Item>
 </Production>
 }
