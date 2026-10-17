@@ -1,10 +1,10 @@
-ARG IMAGE=containers.intersystems.com/intersystems/irishealth-community:2021.1.0.215.3
+ARG IMAGE=docker.iscinternal.com/docker-intersystems/intersystems/iris-community:2026.3.0AI.136.0
 FROM $IMAGE
 
 USER root
 
 # jdbc related 
-RUN apt-get update && DEBUAB_FRONTEND=noninteractive apt-get -y install openjdk-8-jre \
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install openjdk-8-jre \
  && apt clean
 
 WORKDIR /opt/app
