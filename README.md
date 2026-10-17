@@ -82,7 +82,7 @@ $ ./start.sh
 **コンテナを停止する方法**
 
 ```
-$ docker-compose stop
+$ docker compose stop
 ```
 
 
@@ -91,7 +91,7 @@ $ docker-compose stop
 **注意：コンテナを破棄するとIRISで作成した定義やデータも全て破棄されます**
 
 ```
-$ docker-compose down
+$ docker compose down
 ```
 
 ## サンプルの動かし方
